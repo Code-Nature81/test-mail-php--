@@ -21,11 +21,11 @@
         $entete .= 'From: webmaster@monsite.fr' . "\r\n";
         $entete .= 'Reply-to: ' . $_POST['email'];
 
-        $message = '<h1>Message envoyé depuis la page Contact de monsite.fr</h1>
-        <p><b>Email : </b>' . $_POST['email'] . '<br>
+        $message = '<h1>Message envoyé depuis l usine numero ....</h1>
+       
         <b>Message : </b>' . htmlspecialchars($_POST['message']) . '</p>';
 
-        $retour = mail('destinataire@free.fr', 'Envoi depuis page Contact', $message, $entete);
+        $retour = mail('code.nature81@gmail.com', 'Envoi depuis le site', $message, $entete);
         if($retour)
             echo '<p>Votre message a bien été envoyé.</p>';
     }
